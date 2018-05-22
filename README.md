@@ -17,12 +17,18 @@ Commands|Description
 `git push [remote_name] [branch_name]`|Updates github repository by uploading from local repository
 `git push -f [remote_name] [branch_name]`|Force updates github repository by uploading from local repository(Not Recomended)
 
+##Ignoring files
+Commands|Description
+--------|-----------
+`touch .gitignore`|Creates .gitignore file
+`echo [file_path] >> .gitignore`|inserts the file_path into .gitignore file
+`git rm -r --cached [file_name]`|To remove file which is already staged/commited
+
 ##Rarely used
 Commands|Description
 --------|----------
 `git config --global credential.helper cache`|Stores credentials temoprory for 15 minutes
 `git config --global credential.helper store`|Stores credentials permanently
-`git rm --cached -r [file_name]`|Unstages the file to which has been tracked previously
 
 ##Advance
 1. To merge changes only from [better_branch] to master branch and discarding the master
