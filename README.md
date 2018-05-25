@@ -37,6 +37,7 @@ Commands|Description
 `git remote add [remote_name] [url]`|Adds new remote branch
 `git remote remove [remote_name]`|Removes the remote branch
 `git remote rename [old_remote_name] [new_remote_name]`|Renames the remote branch
+`git remote set-url --add --push [remote_name] [second_URL]`|Adds another repository url to the same remote name(only for push).
 
 ## Managing Credential
 Commands|Description
