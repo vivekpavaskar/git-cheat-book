@@ -12,6 +12,7 @@ Commands|Description
 `git add .`|Stages all new/ modified files
 `git commit -m "[message]"`|Stores snapshot of the current directory
 `git commit --amend -m "[message]"`|Replaces previous snapshot with current snapshot along with message
+`git commit --allow-empty -m "[message]"`|Allows you to commit without any staged files
 `git log`|Shows all commits
 `git pull [remote_name] [branch_name]`|Updates local repository by downloading from remote server repository
 `git push [remote_name] [branch_name]`|Updates remote server repository by uploading from local repository
