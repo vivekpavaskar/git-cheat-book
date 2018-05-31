@@ -55,3 +55,11 @@ git commit
 git checkout master
 git merge [better_branch]
 ```
+
+
+
+Visit my other repo for updated git cheat sheet
+
+1. [Github](https://github.com/vivekpavaskar/git-cheat-sheet)
+2. [Bitbucket](https://bitbucket.org/vivekpavaskar/my-git-cheat-sheet/src/master/)
+3. [GitLab](https://gitlab.com/vivekpavaskar/my-git-cheat-sheet)
