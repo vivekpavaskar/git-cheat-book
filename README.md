@@ -43,6 +43,10 @@ Commands|Description
 ## Managing Credential
 Commands|Description
 --------|----------
+`git config user.name "[name]"`|Set name of the author for current repository
+`git config user.email "[email]"`|Set email address of the author for current repository
+`git config --global user.name "[name]"`|Set name of the author for current repository
+`git config --global user.email "[email]"`|Set email address of the author for current repository
 `git config --global credential.helper cache`|Stores credentials temoprory for 15 minutes
 `git config --global credential.helper store`|Stores credentials permanently
 
