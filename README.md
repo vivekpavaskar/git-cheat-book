@@ -2,18 +2,33 @@ Git Cheat Sheet
 ====================
 _A collection of useful git commands._
 
-## Frequently used
+## Setup Repository
 Commands|Description
 --------|-----------
 `git init`|Initialize the repository
 `git clone [url]`|Clones the repository from remote server
+
+## Staging/Tracking Files
+Commands|Description
+--------|-----------
 `git status`|Shows the files which are/aren't stages
 `git add [file_names]`|Stages the new/modified file(s) 
 `git add .`|Stages all new/ modified files
-`git commit -m "[message]"`|Stores snapshot of the current directory
+`git commit -m "[message]"`|Stores snapshot of the stages file
 `git commit --amend -m "[message]"`|Replaces previous snapshot with current snapshot along with message
 `git commit --allow-empty -m "[message]"`|Allows you to commit without any staged files
+
+## Working With Logs/History
+Commands|Description
+--------|-----------
 `git log`|Shows all commits
+`git log --oneline`|Shows all commits in one line mode
+`git log --graph`|Shows all commits in graph mode in detail
+`git log --graph --oneline`|Shows all commits in one line mode as well as in graph mode
+
+## Publishing Local Repository
+Commands|Description
+--------|-----------
 `git pull [remote_name] [branch_name]`|Updates local repository by downloading from remote server repository
 `git push [remote_name] [branch_name]`|Updates remote server repository by uploading from local repository
 `git push -f [remote_name] [branch_name]`|Force updates remote server repository by uploading from local repository
@@ -22,7 +37,7 @@ Commands|Description
 Commands|Description
 --------|-----------
 `touch .gitignore`|Creates .gitignore file
-`echo [file_path] >> .gitignore`|Inserts the file_path into .gitignore file
+`echo '[file_path]' >> .gitignore`|Inserts the file_path into .gitignore file
 `git rm -r --cached [file_name]`|To remove file which is already staged/commited
 
 ## Managing Branch
