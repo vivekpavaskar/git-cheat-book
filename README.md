@@ -2,13 +2,13 @@ Git Cheat Sheet
 ====================
 _A collection of useful git commands._
 
-## Setup Repository
+## Repository Setup
 Commands|Description
 --------|-----------
 `git init`|Initialize the repository
 `git clone [url]`|Clones the repository from remote server
 
-## Staging/Tracking Files
+## Working With Files
 Commands|Description
 --------|-----------
 `git status`|Shows the files which are/aren't stages
@@ -18,7 +18,7 @@ Commands|Description
 `git commit --amend -m "[message]"`|Replaces previous snapshot with current snapshot along with message
 `git commit --allow-empty -m "[message]"`|Allows you to commit without any staged files
 
-## Working With Logs/History
+## Working With Logs
 Commands|Description
 --------|-----------
 `git log`|Shows all commits
@@ -33,21 +33,21 @@ Commands|Description
 `git push [remote_name] [branch_name]`|Updates remote server repository by uploading from local repository
 `git push -f [remote_name] [branch_name]`|Force updates remote server repository by uploading from local repository
 
-## Managing .gitignore
+## Working With .gitignore
 Commands|Description
 --------|-----------
 `touch .gitignore`|Creates .gitignore file
 `echo '[file_path]' >> .gitignore`|Inserts the file_path into .gitignore file
 `git rm -r --cached [file_name]`|To remove file which is already staged/commited
 
-## Managing Branch
+## Working With Branch
 Commands|Description
 --------|----------
 `git branch [branch_name]`|Creates new branch
 `git branch -d [branch_name]`|Delete fully merged branch
 `git branch -D [branch_name]`|Delete branch (even if not merged)
 
-## Managing Remote Branch
+## Working With Remote Branch
 Commands|Description
 --------|----------
 `git remote add [remote_name] [url]`|Adds new remote branch
@@ -55,7 +55,7 @@ Commands|Description
 `git remote rename [old_remote_name] [new_remote_name]`|Renames the remote branch
 `git remote set-url --add --push [remote_name] [second_URL]`|Adds another repository url to the same remote name(only for push).
 
-## Managing Credential
+## Managing Credentials
 Commands|Description
 --------|----------
 `git config user.name "[name]"`|Set name of the author for current repository
@@ -64,6 +64,17 @@ Commands|Description
 `git config --global user.email "[email]"`|Set email address of the author for current repository
 `git config --global credential.helper cache`|Stores credentials temoprory for 15 minutes
 `git config --global credential.helper store`|Stores credentials permanently
+
+## Working With Tags
+Commands|Description
+--------|----------
+`git tag`|Lists all tags
+`git tag -l "[pattern]"`|Lists all tags of perticular pattern
+`git tag [pattern]`|Creates new tag (Lightweight tag)
+`git tag -a [pattern] -m "[message]"`|Creates new tag with message for last commit (-a : Annotated tag)
+`git tag -a [pattern] -m "[message]" [commit checksum]`|Creates new tag with message for perticular commit of that checksum
+ `git push [remote] [tag pattern]`|Publishes perticular tag to remote branch
+ `git push [remote] --tags`|Publishes all tags to remote branch
 
 ## Advance
 1. To merge changes only from [better_branch] to master branch and discarding the master
@@ -77,7 +88,7 @@ git merge [better_branch]
 
 
 
-Visit my other repo for updated git cheat sheet
+Checkout the following links for updated git cheat sheet
 
 1. [Github](https://github.com/vivekpavaskar/git-cheat-sheet)
 2. [Bitbucket](https://bitbucket.org/vivekpavaskar/my-git-cheat-sheet/src/master/)
