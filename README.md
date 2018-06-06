@@ -2,70 +2,56 @@ Git Cheat Sheet
 ====================
 _A collection of useful git commands._
 
-## Repository Setup
+## Setting Up git Repository
 Commands|Description
 --------|-----------
 `git init`|Initialize the repository
 `git clone [url]`|Clones the repository from remote server
 
-## Working With Files
+## Tracking/Staging Files
 Commands|Description
 --------|-----------
-`git status`|Shows the files which are/aren't stages
+`git status`|Shows the files which are modified in detail
+`git status -s`|Shows the files which are modified in one line
 `git add [file_names]`|Stages the new/modified file(s) 
 `git add .`|Stages all new/ modified files
-`git commit -m "[message]"`|Stores snapshot of the stages file
-`git commit --amend -m "[message]"`|Replaces previous snapshot with current snapshot along with message
-`git commit --allow-empty -m "[message]"`|Allows you to commit without any staged files
+`git reset head [file_names]`|Unstages the file
+`git checkout -- [file_name]`|Unmodifies the modified file
 
-## Working With Logs
-Commands|Description
---------|-----------
-`git log`|Shows all commits
-`git log --oneline`|Shows all commits in one line mode
-`git log --graph`|Shows all commits in graph mode in detail
-`git log --graph --oneline`|Shows all commits in one line mode as well as in graph mode
-
-## Publishing Local Repository
-Commands|Description
---------|-----------
-`git pull [remote_name] [branch_name]`|Updates local repository by downloading from remote server repository
-`git push [remote_name] [branch_name]`|Updates remote server repository by uploading from local repository
-`git push -f [remote_name] [branch_name]`|Force updates remote server repository by uploading from local repository
-
-## Working With .gitignore
+## Ignoring Files
 Commands|Description
 --------|-----------
 `touch .gitignore`|Creates .gitignore file
 `echo '[file_path]' >> .gitignore`|Inserts the file_path into .gitignore file
 `git rm -r --cached [file_name]`|To remove file which is already staged/commited
 
-## Working With Branch
+## Commiting Changes
 Commands|Description
---------|----------
-`git branch [branch_name]`|Creates new branch
-`git branch -d [branch_name]`|Delete fully merged branch
-`git branch -D [branch_name]`|Delete branch (even if not merged)
+--------|-----------
+`git commit -m "[message]"`|Stores snapshot of the stages file
+`git commit --amend -m "[message]"`|Replaces previous snapshot with current snapshot along with message
+`git commit --allow-empty -m "[message]"`|Allows you to commit without any staged files
 
-## Working With Remote Branch
+## Viewing Commit History
 Commands|Description
---------|----------
+--------|-----------
+`git log`|Shows all commits
+`git log --oneline`|Shows all commits in one line mode
+`git log --graph`|Shows all commits in graph mode in detail
+`git log --graph --oneline`|Shows all commits in one line mode as well as in graph mode
+`git log --pretty=oneline`|Shows all commit in oneline with complete commit number
+
+## Working With Remotes
+Commands|Description
+--------|-----------
+`git remote`|Shows all Remotes
+`git remote -v`|Shows all Remotes in detail
 `git remote add [remote_name] [url]`|Adds new remote branch
 `git remote remove [remote_name]`|Removes the remote branch
 `git remote rename [old_remote_name] [new_remote_name]`|Renames the remote branch
 `git remote set-url --add --push [remote_name] [second_URL]`|Adds another repository url to the same remote name(only for push).
 
-## Managing Credentials
-Commands|Description
---------|----------
-`git config user.name "[name]"`|Set name of the author for current repository
-`git config user.email "[email]"`|Set email address of the author for current repository
-`git config --global user.name "[name]"`|Set name of the author for current repository
-`git config --global user.email "[email]"`|Set email address of the author for current repository
-`git config --global credential.helper cache`|Stores credentials temoprory for 15 minutes
-`git config --global credential.helper store`|Stores credentials permanently
-
-## Working With Tags
+## Tagging
 Commands|Description
 --------|----------
 `git tag`|Lists all tags
@@ -76,7 +62,36 @@ Commands|Description
  `git push [remote] [tag pattern]`|Publishes perticular tag to remote branch
  `git push [remote] --tags`|Publishes all tags to remote branch
 
-## Advance
+## Working With Branch
+Commands|Description
+--------|----------
+`git branch [branch_name]`|Creates new branch
+`git checkout [branch_name]`|Switches to existing branch
+`git checkout -b [branch_name]`|Creates and switches new branch
+`git branch -d [branch_name]`|Delete fully merged branch
+`git branch -D [branch_name]`|Delete branch (even if not merged)
+`git merge [branch_name]`|Merges other branch specified to current branch
+
+## Pushing/Pulling Branch To Remotes
+Commands|Description
+--------|-----------
+`git push [remote_name] [branch_name]`|Pushes(uploads) your commits from Local Branch to Remotes
+`git fetch [remote_name] [branch_name]`|Fetches(downloads) your commits from Remotes to Local Branch as new branch
+`git pull [remote_name] [branch_name]`|Fetches(downloads) your commits from Remotes to Local Branch as new branch and merges to your current branch
+`git push -f [remote_name] [branch_name]`|Force updates remote server repository by uploading from local repository
+
+## Configuring git 
+Commands|Description
+--------|----------
+`git config --global user.name "[name]"`|Set name of the author for current repository
+`git config --global user.email "[email]"`|Set email address of the author for current repository
+`git config user.name "[name]"`|Set name of the author for current repository
+`git config user.email "[email]"`|Set email address of the author for current repository
+`git config --global credential.helper cache`|Stores credentials temoprory for 15 minutes
+`git config --global credential.helper store`|Stores credentials permanently
+`git config -l`|Lists all configurations
+
+## Advance git
 1. To merge changes only from [better_branch] to master branch and discarding the master
 ```
 git checkout [better_branch]
@@ -86,10 +101,7 @@ git checkout master
 git merge [better_branch]
 ```
 
-
-
 Checkout the following links for updated git cheat sheet
-
-1. [Github](https://github.com/vivekpavaskar/git-cheat-sheet)
-2. [Bitbucket](https://bitbucket.org/vivekpavaskar/my-git-cheat-sheet/src/master/)
-3. [GitLab](https://gitlab.com/vivekpavaskar/my-git-cheat-sheet)
+1. [Bitbucket](https://bitbucket.org/vivekpavaskar/my-git-cheat-sheet/src/master/)
+2. [GitLab](https://gitlab.com/vivekpavaskar/my-git-cheat-sheet)
+3. [Github](https://github.com/vivekpavaskar/git-cheat-sheet)
