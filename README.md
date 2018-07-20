@@ -70,6 +70,7 @@ Commands|Description
 `git checkout -b [branch_name]`|Creates and switches new branch
 `git branch -d [branch_name]`|Delete fully merged branch
 `git branch -D [branch_name]`|Delete branch (even if not merged)
+`git branch -m [new_branch_name]`|Rename the current branch name to new branch name
 `git merge [branch_name]`|Merges other branch specified to current branch
 
 ## Pushing/Pulling Branch To Remotes
