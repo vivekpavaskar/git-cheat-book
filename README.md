@@ -92,6 +92,9 @@ Commands|Description
 `git config --global credential.helper cache`|Stores credentials temoprory for 15 minutes
 `git config --global credential.helper store`|Stores credentials permanently
 `git config -l`|Lists all configurations
+`git config --global http.proxy http://[proxy_username]:[proxy_passeord]@[proxy_server]:[proxy_port]`|Enables git to access remote server via proxy network
+`git config --global --unset http.proxy`|Unset the proxy settings
+
 
 ## Advance git
 1. To merge changes only from [better_branch] to master branch and discarding the master
