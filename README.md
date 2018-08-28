@@ -40,6 +40,7 @@ Commands|Description
 `git log --graph`|Shows all commits in graph mode in detail
 `git log --graph --oneline`|Shows all commits in one line mode as well as in graph mode
 `git log --pretty=oneline`|Shows all commit in oneline with complete commit number
+`git log -p`|Shows all commits with diff
 
 ## Working With Remotes
 Commands|Description
