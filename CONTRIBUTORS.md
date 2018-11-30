@@ -1,4 +1,4 @@
-Contributers list of this cheatsheet
+Contributors list of this cheatsheet
 ====================
 
 #### Name: Vivek Pavaskar (Owner)

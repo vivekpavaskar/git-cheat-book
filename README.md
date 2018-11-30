@@ -2,7 +2,7 @@ Git Cheat Sheet
 ====================
 _A collection of useful git commands._
 
-**Note :** To Contribute your new found commands into this cheatsheet please read [HOWTOCONTRIBUTE.md]
+**Note :** To Contribute your new found commands into this cheatsheet please read [HOWTOCONTRIBUTE.md](https://github.com/vivekpavaskar/git-cheat-sheet/blob/master/HOWTOCONTRIBUTE.md)
 
 ## Setting Up git Repository
 Commands|Description
