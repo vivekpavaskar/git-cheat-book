@@ -2,7 +2,7 @@ Git Cheat Sheet
 ====================
 _A collection of useful git commands._
 
-**Note :** To Contribute your new found commands into this cheatsheet please read [HOWTOCONTRIBUTE.md](https://github.com/vivekpavaskar/git-cheat-sheet/blob/master/HOWTOCONTRIBUTE.md)
+**Note :** To Contribute your new found commands into this cheatsheet please read [HOWTOCONTRIBUTE.md](HOWTOCONTRIBUTE.md)
 
 ## Setting Up git Repository
 Commands|Description
@@ -108,8 +108,3 @@ git commit
 git checkout master
 git merge [better_branch]
 ```
-
-Checkout the following links for updated git cheat sheet
-1. [Bitbucket](https://bitbucket.org/vivekpavaskar/my-git-cheat-sheet/src/master/)
-2. [GitLab](https://gitlab.com/vivekpavaskar/my-git-cheat-sheet)
-3. [Github](https://github.com/vivekpavaskar/git-cheat-sheet)
