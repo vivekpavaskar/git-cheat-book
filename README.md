@@ -1,6 +1,6 @@
 Git Cheat Book
 ====================
-_Learn as you use the git commands._
+_Learn quickly as you use the git commands._
 
 **Note :** To Contribute your new found commands into this cheat book please read the [HOWTOCONTRIBUTE.md](HOWTOCONTRIBUTE.md)
 
