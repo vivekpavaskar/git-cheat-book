@@ -15,3 +15,11 @@ Index
         + [2-2-2 Tracking New Files](tutorial/2-2-2.md)
         + [2-2-3 Staging Modified Files](tutorial/2-2-3.md)
         + [2-2-4 Committing Your Changes](tutorial/2-2-4.md)
+    + [2-3 Viewing the Commit History](tutorial/2-3-0.md)
+    + [2-4 Undoing Things](tutorial/2-4-0.md)
+    + [2-5 Working with Remotes](tutorial/2-5-0.md)
+        + [2-5-1 Showing Your Remotes](tutorial/2-5-1.md)
+        + [2-5-2 Adding Remote Repositories](tutorial/2-5-2.md)
+        + [2-5-3 Fetching and Pulling from Your Remotes](tutorial/2-5-3.md)
+        + [2-5-4 Pushing to Your Remotes](tutorial/2-5-4.md)
+        
